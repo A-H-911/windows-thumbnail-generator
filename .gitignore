@@ -1,0 +1,47 @@
+## .NET / MSBuild build outputs
+bin/
+obj/
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+nuget.config.local
+
+## Visual Studio / Rider machine-local files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.pidb
+*.db
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+
+## Publish output
+publish/
+
+## ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+## Rider
+.idea/
+
+## OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Test results and coverage
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+## Logs
+*.log

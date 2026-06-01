@@ -1,0 +1,35 @@
+Codemap scan: 2026-05-31 (second run — post-reorganization)
+Project: windows-thumbnail-generater (ThumbnailPrimer)
+
+DIFF vs previous scan: ~2% change — updated in place (threshold: 30%)
+
+Files scanned: 4 active src files + 3 test files (1142 lines total)
+  src/Program.cs                17 lines  (+2 vs last scan — InternalsVisibleTo added)
+  src/MainForm.cs              276 lines  (unchanged)
+  src/ThumbnailCachePrimer.cs  312 lines  (+1 vs last scan — comment correction)
+  src/NativeMethods.cs          79 lines  (unchanged)
+  tests/CollectImagesTests.cs  187 lines
+  tests/PrimeAsyncTests.cs     155 lines
+  tests/PrimeProgressTests.cs   69 lines
+
+Architecture changes since last scan:
+  - Codebase reorganized: src/ and tests/ folder structure introduced
+  - Test project added: 34 tests across 3 classes (12 unit + 7 unit + 6 integration)
+  - Bug fixed: ToFrozenSet() now passes StringComparer.OrdinalIgnoreCase explicitly
+    (.NET 10 does not inherit the source HashSet's comparer — caught by tests)
+  - PrimeAsync return type changed Task → Task<bool?> (cache verification result)
+  - VerifyCacheEntry() added (post-loop WTS_INCACHEONLY spot-check)
+  - ConsecutiveFailureThreshold + FailureRateThreshold resilience guards added
+  - GatherImages symlink/junction cycle detection added
+
+New dependencies detected:
+  - Microsoft.NET.Test.Sdk 17.12.0 (tests project)
+  - xunit 2.9.3 (tests project)
+  - xunit.runner.visualstudio 2.8.2 (tests project)
+
+Codemaps updated:
+  docs/CODEMAPS/architecture.md  — line counts corrected, layout + test sections added
+  docs/CODEMAPS/dependencies.md  — test NuGet packages added, publish path updated
+
+Staleness: no docs older than 1 day — nothing stale
+Next recommended scan: after adding new source files, COM surfaces, or test classes

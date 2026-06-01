@@ -1,0 +1,13 @@
+# Normalize line endings for all text files
+* text=auto eol=crlf
+
+# Force Unix LF for shell scripts (if any cross-platform scripts are added)
+*.sh text eol=lf
+
+# Treat binary files as binary
+*.dll binary
+*.exe binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.drawio binary

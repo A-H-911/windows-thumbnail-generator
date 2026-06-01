@@ -1,0 +1,117 @@
+<mxGraphModel dx="3195" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3195" pageHeight="570" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="title" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#FFFFFF;font-weight:bold&quot;&gt;Thumbnail Cache Priming Flow&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#269973;strokeColor=#269973;fontSize=16;fontStyle=1;fontColor=#FFFFFF;align=center;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="20" y="20" width="3155" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="lane_row_user" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E4F8F1;strokeColor=#269973;strokeWidth=1;opacity=70;" vertex="1" parent="1">
+      <mxGeometry x="20" y="70" width="3155" height="120" as="geometry"/>
+    </mxCell>
+    <mxCell id="lane_label_user" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#FFFFFF;font-weight:bold&quot;&gt;User&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#269973;strokeColor=#269973;fontColor=#FFFFFF;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="28" y="100.0" width="144" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="lane_row_mainform" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE8D6;strokeColor=#D97706;strokeWidth=1;opacity=70;" vertex="1" parent="1">
+      <mxGeometry x="20" y="190" width="3155" height="120" as="geometry"/>
+    </mxCell>
+    <mxCell id="lane_label_mainform" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#FFFFFF;font-weight:bold&quot;&gt;MainForm (UI)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D97706;strokeColor=#D97706;fontColor=#FFFFFF;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="28" y="220.0" width="144" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="lane_row_primer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F0FF;strokeColor=#1976D2;strokeWidth=1;opacity=70;" vertex="1" parent="1">
+      <mxGeometry x="20" y="310" width="3155" height="120" as="geometry"/>
+    </mxCell>
+    <mxCell id="lane_label_primer" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#FFFFFF;font-weight:bold&quot;&gt;ThumbnailCachePrimer&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1976D2;strokeColor=#1976D2;fontColor=#FFFFFF;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="28" y="340.0" width="144" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="lane_row_com" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#A06600;strokeWidth=1;opacity=70;" vertex="1" parent="1">
+      <mxGeometry x="20" y="430" width="3155" height="120" as="geometry"/>
+    </mxCell>
+    <mxCell id="lane_label_com" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#FFFFFF;font-weight:bold&quot;&gt;Windows Shell COM&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A06600;strokeColor=#A06600;fontColor=#FFFFFF;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="28" y="460.0" width="144" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="separator" value="" style="endArrow=none;html=1;strokeColor=#B0BEC5;strokeWidth=2;dashed=0;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="182" y="70" as="sourcePoint"/>
+        <mxPoint x="182" y="550" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="step_s1" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;1. Click Prime Cache&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8F0E0;strokeColor=#269973;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="210" y="95.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s2" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;2. Validate folder &amp; create CTS&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD4B0;strokeColor=#D97706;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="435" y="215.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s3" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;3. Call PrimeAsync, await Task&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD4B0;strokeColor=#D97706;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="660" y="215.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s4" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;4. Spawn STA Thread&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D0E0FF;strokeColor=#1976D2;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="885" y="335.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s5" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;5. Collect image files&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D0E0FF;strokeColor=#1976D2;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1110" y="335.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s6" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;6. Create IThumbnailCache&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE69C;strokeColor=#A06600;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1335" y="455.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s7" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;7. Build IShellItem per file&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE69C;strokeColor=#A06600;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1560" y="455.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s8" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;8. GetThumbnail WTS_EXTRACT&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE69C;strokeColor=#A06600;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1785" y="455.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s9" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;9. Report progress&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D0E0FF;strokeColor=#1976D2;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="2010" y="335.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s10" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;10. Update progress bar&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD4B0;strokeColor=#D97706;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="2235" y="215.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s11" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;11. Verify cache (WTS_INCACHEONLY)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE69C;strokeColor=#A06600;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="2460" y="455.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s12" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;12. Complete Task&lt;bool?&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D0E0FF;strokeColor=#1976D2;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="2685" y="335.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="step_s13" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#1F2937&quot;&gt;13. Show Done / Warning&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD4B0;strokeColor=#D97706;strokeWidth=2;fontColor=#1F2937;fontSize=11;align=center;verticalAlign=middle;arcSize=12;" vertex="1" parent="1">
+      <mxGeometry x="2910" y="215.0" width="185" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s1" target="step_s2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s2" target="step_s3">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s3" target="step_s4">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s4" target="step_s5">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s5" target="step_s6">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s6" target="step_s7">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s7" target="step_s8">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s8" target="step_s9">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s9" target="step_s10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_9" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#269973&quot;&gt;next file&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s10" target="step_s7">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_10" value="&lt;div dir=&quot;ltr&quot; lang=&quot;en&quot; align=&quot;center&quot; style=&quot;color:#269973&quot;&gt;all files done&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s10" target="step_s11">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s11" target="step_s12">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge_12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#269973;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="step_s12" target="step_s13">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>
